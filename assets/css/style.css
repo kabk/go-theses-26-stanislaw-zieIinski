@@ -75,6 +75,7 @@ p {
 
 ol,
 ul {
+  list-style: none;
   /* ordered list and unordered list styles */
 }
 
