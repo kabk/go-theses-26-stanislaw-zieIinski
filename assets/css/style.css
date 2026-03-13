@@ -52,6 +52,7 @@ body {
   width: 100%;
   height: auto;
   overflow-y: auto;
+  margin: 0;
 }
 
 a {
@@ -98,7 +99,7 @@ ________________________ */
 
 div.page-wrapper {
   /* the element that 'wraps' everything */
-  padding: var(--margin);
+  padding: var(--margin-s);
 }
 
 /* navigation */
