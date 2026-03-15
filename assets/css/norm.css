@@ -1,5 +1,5 @@
-html {
-  line-height: 1.15;
+/* html {
+  line-height: 1;
   -webkit-text-size-adjust: 100%;
 }
 body {
@@ -10,7 +10,7 @@ h1 {
   margin: 0;
 }
 hr {
-  box-sizing: content-box;
+  box-sizing: border-box;
   height: 0;
   overflow: visible;
 }
@@ -140,13 +140,9 @@ template {
 }
 [hidden] {
   display: none;
-}
+} */
 
-/* /* 
-DON’T TOUCH THIS FILE! 
-
-
-html,
+DON’T TOUCH THIS FILE! html,
 body,
 div,
 span,
@@ -301,4 +297,4 @@ html {
   height: 100%;
   margin: 0 !important;
   padding: 0 !important;
-} */
+}

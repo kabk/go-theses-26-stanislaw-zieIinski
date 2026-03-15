@@ -14,15 +14,17 @@ ________________________ */
   --color-text-link: rgba(0, 0, 255, 0.8);
   --color-text-link-hover: rgba(0, 0, 255, 0.4);
   /* Font values */
-  --font-family: sans-serif;
-  --font-size: 22px;
+  --font-family: Arial;
+  --font-size: 25px;
+  --font-weight: 900;
+  --line-height: 25px;
 
   /* Margin values */
   --margin: 1rem;
-
+  /* 
   --font-size-heading: calc(var(--font-size) * 2);
   --font-size-subheading: calc(var(--font-size) * 1.25);
-  --font-size-caption: calc(var(--font-size) * 0.875);
+  --font-size-caption: calc(var(--font-size) * 0.875); */
 
   --margin-xs: calc(var(--margin) * 0.5);
   --margin-s: calc(var(--margin) * 1);
@@ -42,6 +44,7 @@ html {
   font: var(--font-size) var(--font-family);
   color: var(--color-text);
   background-color: var(--color-background);
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -52,7 +55,8 @@ body {
   width: 100%;
   height: auto;
   overflow-y: auto;
-  margin: 0;
+  font-weight: 400 !important;
+  line-height: var(--line-height);
 }
 
 a {
@@ -67,7 +71,6 @@ a:hover {
 
 h1 {
   font-size: var(--font-size);
-  font-weight: 400;
 }
 
 p {
@@ -106,7 +109,8 @@ div.page-wrapper {
 
 nav {
   position: fixed;
-  /* padding: var(--margin-s); */
+  width: 400px;
+
   /* width: 100vw;
   top: 0;
   left 0;
@@ -115,24 +119,31 @@ nav {
 
 main {
   /* min-height: 100vh; */
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  gap: var(--margin-xs);
-  align-content: start;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* gap: var(--margin-xs); */
 
-  padding-top: var(--margin-m);
+  min-height: 100vh;
+  max-width: 1600px;
+  /* padding-top: var(--margin-m); */
   padding-bottom: var(--margin-m);
+  padding-left: calc(4 * var(--margin-xl));
 }
 
 main > section {
-  padding: var(--margin-xs);
-  grid-column: span 4;
-  background-color: lightgrey;
-  align-self: self-start;
+  padding-bottom: var(--margin-s);
+
+  /* background-color: lightgrey; */
+  /* align-self: self-start; */
 }
 
-/* UTILITY CLASSES */
+.section-title {
+  text-align: center;
+  color: red;
+
+  padding-bottom: var(--margin-s);
+  padding-top: var(--margin-s);
+}
 
 /* WEBSITE MEDIA QUERIES */
 
@@ -141,14 +152,19 @@ main > section {
   :root {
     --font-size: 22px;
   }
-
-  main > section {
-    grid-column: span 8;
+  main {
+    padding-left: calc(4 * var(--margin-xl));
   }
 }
 
-@media (max-width: 600px) {
-  main > section {
-    grid-column: span 16;
+@media (max-width: 800px) {
+  nav {
+    width: fit-content;
+    position: relative;
+    padding-right: var(--margin-m);
+  }
+  main {
+    padding-top: var(--margin-s);
+    padding-left: 0;
   }
 }
