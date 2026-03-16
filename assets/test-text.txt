@@ -10,12 +10,9 @@ I also like to render words using the visual similarity between numerals and lat
 
 Those two writing ‘styles'—textese and leet speak(*Footnote: Explain textese and leetspeak in two sentences)—interest me for the visual quality they bring to the text. They originated in different contexts and addressed different needs. Despite varying objectives, both explore relation of numerals to letters by extending standard alphabet(s). (*Footnote: In this text I talk about english language, the latin alphabet and hindu-arabic numerals, since those are the ones I am familiar with; similar phenomena can be observed in other languages and scripts).
 
- 
-
 	1234567890*
 
 A default set of numerals, arranged in an order common for most keyboards on phones and computers.(*Footnote: Again I am referring to the Standard-European base-10 counting thus ignoring many other counting systems and their symbols)  Thanks to my graphic design education I know this set of numerals as ‘lining' (maybe footnote: They can be also called titling or modern figures.) – this term is a part of naming scheme of design softwares and unicode conventions–it means that numerals have uniform height which mostly matches the height of capital letters. If the font contains adequate glyphs, I can change the software settings to display a slightly different set of characters – for example, with CSS – an open web, standardised stylesheet language—basically changing how the websites look like— I can use a following line of code: font-variant-numeric: oldstyle-nums;    
-
 
 	1234567890
  
