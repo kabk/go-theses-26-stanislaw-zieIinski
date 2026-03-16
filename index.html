@@ -58,6 +58,7 @@
       <main>
         <section id="test-text"></section>
       </main>
+
       <footer>
         <section class="footer-menu">
           <ul class="bibliography-list">
@@ -74,5 +75,14 @@
 
     <!-- website script right before closing bodytag -->
     <script type="text/javascript" src="assets/js/script.js?ver=1.0"></script>
+    <script>
+      async function insertTestText() {
+        const response = await fetch("./assets/test-text.txt");
+        const text = await response.text();
+        document.getElementById("test-text").textContent = text;
+      }
+
+      insertTestText();
+    </script>
   </body>
 </html>
