@@ -12,7 +12,7 @@ ________________________ */
   --color-background: rgba(255, 255, 255, 1);
   --color-text: rgba(0, 0, 0, 1);
   --color-text-link: rgba(0, 0, 255, 0.8);
-  --color-text-link-hover: rgba(0, 0, 255, 0.4);
+  --color-text-link-hover: rgb(255, 0, 0);
   /* Font values */
   --font-family: Arial;
   --font-size: 25px;
@@ -61,17 +61,22 @@ body {
 }
 
 a {
-  color: var(--color-text-link);
-  text-decoration: underline;
+  /* color: var(--color-text-link);*/
+  text-decoration: none;
 }
 
 a:hover {
+  cursor: pointer;
   color: var(--color-text-link-hover);
-  text-decoration: underline;
 }
 
 h1 {
   font-size: var(--font-size);
+}
+
+h1 > a {
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 p {
@@ -149,9 +154,6 @@ footer {
 
 li {
   display: inline-flex;
-}
-li:hover {
-  text-decoration: underline;
 }
 
 /* CLASS */
