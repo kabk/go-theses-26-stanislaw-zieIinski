@@ -1,0 +1,106 @@
+I often use numbers to shorten my messages. It’s possible because of numerals’ homophony with certain english words.  
+
+yeah, we’ll see 2morrow
+
+Technically, it speeds up the writing process, although I think I use it mostly to make my messages look and feel more casual or funny; to change their tone.  I also like to use the visual similarity between numerals and latin letters; the number ‘0’ replaces the letter ‘O’, and so on.
+B055
+
+Those two writing ‘styles’ I mention here—textese* and leet speak*—interest me for the graphical quality they bring to text. They come from two separate starting points, and they serve two different objectives but both of them explore the relation of numerals to alphabet*.
+
+*1. It is important to say that both exist in many scripts and languages but naturally I am talking about the latin alphabet and hindu-arabic numerals, I am not sure if this should be a footnote or part of the introduction. I’d rather have it as a footnote since a) it’s seems obvious because I give examples in latin only, b)it seems like a secondary note
+2. I wonder if it’s also good to say that other symbols like eg.: “/” could also be used but IN THIS TEXT I DO NOT TALK ABOUT THEM
+3. I don’t know what to do with cross-language cases. Dor example, me and my best friend have an almost only internally understood slang where we use cross-language homophony —English name for a symbol sounds like part of a Polish word. 
+eg.: “/” is a way to signify the street I used to live on, because part of it is pronounced as “dash”. Maybe it’s not so relevant but numbers do also appear there, less often but they do. 
+4. Fourth little doubt about the introduction is that I use a kind of artificial example, usually I’d say “c u 2morrow” but in order to avoid the need to explain the difference between letter homophony and number homophony I went with that made up message. 
+5. I omit the parts that clearly state my intents, I guess it’s a stylistic choice, I hope they are not required... somehow words like: “I want to explore the origin of numerals in this text” feel boring, didactic and reserved for truly academic writing. IS IT OK!? 
+
+
+
+1234567890*
+
+This is a ‘default’ set of numerals, arranged in an order common for most keyboards on phones and computers. I know this set of numerals as ‘lining’– the term is a part of naming scheme inside of design softwares and unicode conventions. If the font contains adequate glyphs I can change the settings to display a slightly different set of characters. For example, in CSS—an open web, standardized stylesheet language—basically changing how the websites look like— I can use a following line: font-variant-numeric: oldstyle-nums;    
+
+1234567890
+ 
+My main association with ‘old style’ numerals, also called ‘text-figures’ is that they are believed to be more pleasent for reading. It is a result of their shapes and vertical alignment being closer to that of lowercase letters. I can see that the old style numeral “9” looks much more like a lowercase ‘q’ or a , lowercase, single-storey‘g’. Out of nine web-safe typefaces, mentioned on Web3, only Georgia uses old style figures by default. In fact the common version of the font does not include lining numerals in its glyphset. Georgia was designed by Matthew Carter for Microsoft as a companion to the sans-serif Verdana. The main intent of the design was to create a serif font that would remain legible on, at the time, small screen resolutions that unified the widths of letter elements. The first version of the font was released in 1996 by Microsoft.
+
+georgia1.0234567890
+On a typophile forum discussion from 2009 many users express their preference for the ‘hybrid’ figure forms used in the original Georgia 1.0 release. One user recalls a conversation where Matthew Carter said: ‘In my design of Georgia I used “hybrid” figures similar to the ones in Miller. These are somewhere between “modern” figures that align with the caps and “old-style” lowercase-like figures (and are historically authentic in the Scotch Roman faces on which Miller is based).” 
+
+1234567890
+
+That set of numerals is a screenshot of Bell as it is presented in The Elements of Typographic Style. Robert Bringhurst suggests that the proportions introduced by Richard Austin in 1788 were punchcutters’ translations of numerals handwritten on placards and shop signs, and therefore a british middle-class invention. Analysing how the  the following 
+
+“They are basic parts of typographic speech, and they are a sign of civilization: a sign that dollars are not really twice as important as ideas, and numbers are not afraid to consort on an equal footing with words.”
+ 
+
+987654321 
+I have a tiring tendency to analyze things in depth, pull all possible strings to understand where something comes from. 
+The figure above is a set of numerals presented as an “indian wonder” in Codex Vigilanus, a compilation of historical documents, assembled in what is now southern Spain around 10th century. It is often mentioned as the first work that introduced the hindu-arabic numerals to Europe. The first time I saw this image online directed me to G. Ifrah’s “The universal history of numbers”—an attempt to present the origins of the world counting systems. 
+“the full and complete answer to all and any questions that anyone might want to ask about the history of numbers and of counting, from prehistory to the age of computers.” 
+Even though I was not looking for a ‘complete answer’, the book interests me for it’s variety of graphical symbols, and simplified visual representations of the concepts it talks about. A few negative reviews online, one that classifies Ifrah’s work as a ‘deception’. I continued to browse through the online copy. It’s an intense, 600+ pages book in a square format, so unpleasent to look at on my horizontal screen.  
+
+One sub-chapter I found particularly relevant to that way of thinking, and even funny is titled “Fanciful explanations for the origin of “Arabic” numerals” p.356  A set of six, unlikely, hypotheses from various times and places, each of them speculates the origins of numerical forms seeking their beginnings in some closed systems like mapping the strokes onto the sides and diagonals of a square etc. Ifrah criticises them for being ‘sterile’, therefore far away from the truth, and sends the reader to his own, quite complex, diagrams that aim to simulate possible evolutions and journeys as they travlled the world across centuries. 
+
+I noticed that my chaotic reading was subordinated to the familiarity of some images. The ones I’ve seen before invited me to stop and read more. 
+Another one: a page from a book 1478 Treviso arithemtic, I previously read about in Sadie Plant’s  Zeros+Ones.  Previously I’ve seen the same exact reproductions, possibly taken from digital scans of Ifrah’s book.
+
+1234567890
+A few hours later I’ve found a better reproduction of Treviso’s Arithmetic through British Library, Incunabula Short Title Catalogue (ISTC). It was scanned by someone and uploaded online for public access via BEIC  Milan Library online viewer. Despite the poor quality of the electronic facsimile it seems clear that the characters for lowercase “i” and “o” were used to represent one and zero accordingly. Punchuctters’ and/or printers’ decisions to fuse those symbols were probably directed by time efficiency.  Forging additional characters would require extra work which would influence the economy of production. I can’t be sure if the financial gain was the actual reason behind those decisions, but even looking at the online copy, unaware of the writing conventions from that time, the context in which the characters appear on the page is enough to tell their functions apart. 
+
+23456789
+              IO
+Few centuries later, after numerals went through the process of a literal and figurative  “capitalization”,  early typewriters engineers made similar compromises merging the key for the letters “O”.     
+
+1234567890
+In his article “Oh! Oh! Zero!” Charles Bigelow discusses the results of that merging and their traces in modern type design covering examples ranging from 15th century type to recent developments. 
+1234567890
+I was interested in more of those readability issues, I found a study with low resolution numerals on dot matrix displays. The studies results are somehow underwhelming, usually all of th. I think because of the nature of hand-writing we do not think of them as shapes rather as strokes. 
+Similar study was conducted here: 1234567890 1234567890 Linclon Mitre and Leroy.
+
+E13B
+A typeface designed for magnetic character recognition (MICR) interests me as it clearly influenced the visual culture and advertising. Typefaces like calculator or data70 by Bob Newman simulated the shapes to create an association to the computerised world. 
+
+
+A selective process dependent on   
+
+0123456789
+Donald Knuth numbers from computer modern–the difference between mathematician and a typographer>try and understand the reason for which this occurs. 
+
+1234567890 
+Send from the telescope–It’s interesting to see how the seemingly random arrangements still contain trace of known-forms of numerals.  
+
+.---- ..--- ...--  ....- ..... -.... --... ---.. ----. ----  
+Morse code notation
+1234567890
+Mnemonic chart
+
+1234567890 Linclon/Mitre
+Here referring to Bigelow’s text I want to go through different examples of how 0 was altered in different typefaces in order to gain legibility. 
+
+1234567890 Sabon next(oldstyle)
+1234567890 Zapf — Introducing alternate 0 character
+1234567890 lucida – as an example of typeface with default slashed zero, perhaps coming from typewriters
+1234567890 FE-Schrift as an example of the “removal” 
+1234567890 Viafont – Peculiar shapes, something in between the slashed zero and Zapf’s ‘top terminal’.
+
+
+1234567890 Apple math notes introduce smart script, it’s hard to identify if the software is a skeleton based typeface and how it renders in the notes app. Describe how it works. The number shapes slide up... etc.  It’s interesting to see how that interpretes and influences handrwiting at the same time. 
+
+12345 Russian Postcode 
+Similar to the apple notes in a sense that in constraints the handrwiting of the numerals introducing a standard and a grid. 
+Optional:
+1 2 3 4 5 6 7 8 9 0 
+Counter—try to reach out to Bryce Wilner
+
+123456789 from Who Goes There
+found on Language as Symbols a set of numerals introduced in a novel Who Goes There where main character solves a cipher based on the numerals inscribed in a circle shape with two parallel diameters.
+
+Ending
+Tools like google lens and apple’s live text allow for copying text directly from images, this makes it easier to access emails phone numbers without the need to remember them — apple on their site says you can reach what you need with one tap. I briefly tested the way it deals with the similiarities between oh and zero, one and lowercase l. > present a few results, images of text in different fonts > The tools are actually struggling to recognise those characters, I couldn’t find any sources on the importance and strategies to deal with that problem during the development of those tools, judging by the recent rapid improvements in ai it might soon become error-free.
+Most default sans serif fonts do not include old style figures > what’s next in the evolution of figures in relation to alphabet.
+
+I Z E A S b F B q O
+
+When a numeral turns into a phonetic symbol or an undercover letter-sign it no longer represents its original mathematical properties, through that temporary loss it confuses the machine and suggests a more complex thought process.
+I feel this text is more about my way of observing than numerical forms themselves. When I want to use leetspeak I don’t do it to confuse an algorithm but to suggest a different way of reading. What can be said through graphic design? 

@@ -56,111 +56,7 @@
       </header>
 
       <main>
-        <section class="note" id="001">
-          1-This is the first block . Intro so called. I hate designing like
-          that. This is the first block
-        </section>
-        <section class="note" id="002">
-          2-Hello... Each of those blocks will contain a part of my text which
-          is in the making...the next blocks shows more or less how it may look
-          like.
-        </section>
-        <section class="note" id="003">
-          <p class="section-title">1234567890</p>
-          Short history switch to Scotch Bell: This example of numerals
-          introduced in 1788 illustrates the beginning of a transition from
-          oldstyle figures side lining. Introudction of lining numerals,
-          presumabely for the need of shopkeepers or inspired by the way
-          shopkeepers wrote numbers (further invesitgate–i don't understand
-          where the shopkeepers needed those exactly) There was a discussion
-          wether the lining numerals made the legibility and proportions of
-          those numbers. 'Discussion' between The Printer's Grammar (1808) and
-          Hansard's Typographia (1825). The Elements of Typographic style (1996)
-          Bringurst Robert calls it 'commercial censorship'. We can clearly see
-          which ones has were adopted.
-        </section>
-        <section class="note" id="004">
-          This is the fourth block. I think it would be still nice to complicate
-          the structure by that randomization... somehow it's less related to
-          the text now since it has changed it's shape.
-        </section>
-        <section class="note" id="005">This is the fifth block</section>
-        <section class="note" id="006">
-          29- A woman whose fantasy life is influenced by images from the
-          Hollywood films begins to act as if she is a character in a movie.
-        </section>
-        <section class="note" id="007">This is the seventh block</section>
-        <section class="note" id="008">
-          33- A killer is hired to kill a young boy, but cannot bring himself to
-          do it, thus endangering his own life.
-        </section>
-        <section class="note" id="009">
-          Of course so far it's not @ all mobile friendly, despite the fact I
-          think it's ok some sites do not work on mobile, I will still make it
-          work a bit better, just stacking the blocks in one long column seems
-          to be maybe too far from what the desktop site could offer. but at the
-          same time idk, maybe it's ok
-        </section>
-        <section class="note" id="010">This is the tenth block</section>
-        <section class="note" id="011">
-          This is the eleventh block. 120- In the future, there is nothing but
-          water on the surface of the earth, an enormous ocean of salty water. A
-          few people have survived the cataclysm and they are kept alive by the
-          dream of a secret island in the middle of the ocean, with rivers,
-          trees, and animals.
-        </section>
-        <section class="note" id="012" Lorem10>
-          This is the twelfth block
-        </section>
-        <section class="note" id="013">This is the thirteenth block</section>
-        <section class="note" id="014">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti,
-          aliquid!This is the fourteenth block
-        </section>
-        <section class="note" id="015">This is the fifteenth block</section>
-        <section class="note" id="016">This is the sixteenth block</section>
-        <section class="note" id="017">
-          Lorem ipsum dolor sit amet.This is the seventeenth block
-        </section>
-        <section class="note" id="018">This is the eighteenth block</section>
-        <section class="note" id="019">This is the nineteenth block</section>
-        <section class="note" id="020">This is the twentieth block</section>
-        <section class="note" id="021">This is the twenty-first block</section>
-        <section class="note" id="022">This is the twenty-second block</section>
-        <section class="note" id="023">This is the twenty-third block</section>
-        <section class="note" id="024">This is the twenty-fourth block</section>
-        <section class="note" id="025">This is the twenty-fifth block</section>
-        <section class="note" id="026">This is the twenty-sixth block</section>
-        <section class="note" id="027">
-          This is the twenty-seventh block
-        </section>
-        <section class="note" id="028">This is the twenty-eighth block</section>
-        <section class="note" id="029">This is the twenty-ninth block</section>
-        <section class="note" id="030">This is the thirtieth block</section>
-        <section class="note" id="031">This is the thirty-first block</section>
-        <section class="note" id="032">This is the thirty-second block</section>
-        <section class="note" id="033">
-          This is the thirty-third block...128- A successful writer, under a
-          pseudonym, fails when he writes under his own name.
-        </section>
-        <section class="note" id="034">This is the thirty-fourth block</section>
-        <section class="note" id="035">
-          799- I THINK THERE WILL BE WAY LESS BLOCKS!!!
-        </section>
-        <section class="note" id="036">This is the thirty-sixth block</section>
-        <section class="note" id="037">
-          This is the thirty-seventh block
-        </section>
-        <section class="note" id="038">This is the thirty-eighth block</section>
-        <section class="note" id="039">This is the thirty-ninth block</section>
-        <section class="note" id="040">
-          769- A couple's first son is born in a different dimension and appears
-          to them as a brilliant blue little pyramid. The parents have to step
-          into this other dimension to see their baby as he really is, which
-          they do, without a moment of hesitation, even if this means never
-          seeing the world again as they know it. This was my thesis about
-          numbers, thank you very much.
-        </section>
+        <section id="test-text"></section>
       </main>
       <footer>
         <section class="footer-menu">
@@ -178,5 +74,14 @@
 
     <!-- website script right before closing bodytag -->
     <script type="text/javascript" src="assets/js/script.js?ver=1.0"></script>
+    <script>
+      async function insertTestText() {
+        const response = await fetch("../assets/test-text.txt");
+        const text = await response.text();
+        document.getElementById("test-text").textContent = text;
+      }
+
+      insertTestText();
+    </script>
   </body>
 </html>

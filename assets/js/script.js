@@ -14,6 +14,8 @@ function docReady(fn) {
 }
 
 docReady(function () {
+  //  SCRIPT FOR LEET A TAGZ
+
   const letters2numbers = {
     a: "4",
     e: "3",
@@ -24,7 +26,6 @@ docReady(function () {
     z: "2",
     g: "9",
   };
-
   const anchors = document.querySelectorAll("a");
 
   anchors.forEach(function (anchor) {
