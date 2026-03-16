@@ -57,6 +57,7 @@ body {
   overflow-y: auto;
   font-weight: 400 !important;
   line-height: var(--line-height);
+  overscroll-behavior: none;
 }
 
 a {
@@ -79,6 +80,8 @@ p {
 
 ol,
 ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
   list-style: none;
   /* ordered list and unordered list styles */
 }
@@ -137,6 +140,21 @@ main > section {
   /* align-self: self-start; */
 }
 
+footer {
+  /* background-color: black;
+  color: white;
+  font-size: small;
+  padding-bottom: var(--margin-l); */
+}
+
+li {
+  display: inline-flex;
+}
+li:hover {
+  text-decoration: underline;
+}
+
+/* CLASS */
 .section-title {
   text-align: center;
   color: red;
