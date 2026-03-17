@@ -20,10 +20,11 @@ My main association with ‘old style’ numerals, also called ‘text-figures�
 
 	Georgia1.0 234567890
 
-I never really used Georgia so that was a sort of discovery for me, I knew about it but I never paid close attention to its figures... I started reading a bit more about the history of the font. On a  2009 discussion thread  on a forum 'Typophile' many users express their preference for the ‘hybrid’ figure forms used in the original Georgia 1.0 release. One user recalls a conversation where Matthew Carter said: 
-‘In my design of Georgia I used “hybrid” figures similar to the ones in Miller. These are somewhere between “modern” figures that align with the caps and “old-style” lowercase-like figures (and are historically authentic in the Scotch Roman faces on which Miller is based).” 
+I haven't used Georgia that often so I was surprised to out that distinctive feature, this, in my opinion, bold decision to omit lining figurs, made me interested in the history of the font. On an online typedesign forum, Typophile, I found a 2009 discussion, started by someone looking for recommendations for which lining-numerals would match Georgia best. Someone answers to use original georgia numerals, a lot of people express their preference for that drawing, one user recalls a conversation with Matthew Carter where he said:  
+‘In my design of Georgia I used “hybrid” figures similar to the ones in Miller. These are somewhere between “modern” figures that align with the caps and “old-style” lowercase-like figures (and are historically authentic in the Scotch Roman faces on which Miller is based).” After reading more I found out that in the second release the real old style numerals where introduced to avoid confusion created by the in-betweenness of the 'hybrid' forms.
 
-	R. Austin 1234567890
+	
+R. Austin 1234567890
 
 That set of numerals is a screenshot of Bell as it is presented in The Elements of Typographic Style. Robert Bringhurst suggests that the proportions introduced by Richard Austin in 1788 were punchcutters’ translations of numerals handwritten on placards and shop signs, and therefore a british middle-class invention. Analysing how the  the following 
 
