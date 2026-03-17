@@ -16,20 +16,20 @@ A default set of numerals, arranged in an order common for most keyboards on pho
 
 	1234567890
  
-'Old style’ numerals, also called text figures, are usually referred to as more pleasent to read. This feeling is somehow caused by the way them blending more into the pattern created by lowercase letters. They are shifted on the vertical axis, this way, the old style version of the numeral “9” is much closer to the lowercase ‘q’ or a , single-storey ‘g’. 
-	Out of nine web-safe typefaces, mentioned on Web3, only one – Georgia– uses old-style figures by default. In fact the common version of the font (there is also a Georgia Pro family available to purchase) does not include lining numerals at all. It was designed by Matthew Carter, for Microsoft, as a companion to the sans-serif Verdana. The main goal of the design was to create a serif font that would remain legible on small screen resolutions. The first version of the font was released in 1996 by Microsoft. 
+'Old style’ numerals, also called text figures, are usually referred to as more pleasant to read. This feeling is somehow caused by them blending more into the pattern created by lowercase letters. Shapes are slightly aletered and the digits are shifted on the vertical axis. Therefore the old style version of the numeral “9” is much closer to the lowercase ‘q’ or a single-storey ‘g’ than its lining substitute. 
+	Out of nine web-safe typefaces, mentioned on Web3, only one – Georgia–uses old-style figures by default. In fact the common version of the font does not include lining numerals at all. (*Footnote: there is also a Georgia Pro family available for purchase from Carter&Cone–this one uses lining numerals following the standard convention of retail typefaces) . It was designed by Matthew Carter, for Microsoft, as a companion to the sans-serif Verdana. The main goal of the design was to create a 'sturdy, dependable serif typeface for optimal clarity in online reading'(*from Carter&Cone site). The first version was released in 1996 by Microsoft. 
 
 	Georgia1.0 234567890
 
-I haven't used Georgia that often so I was surprised to out that distinctive feature, this, in my opinion, bold decision to omit lining figurs, made me interested in the history of the font. On an online typedesign forum, Typophile, I found a 2009 discussion, started by someone looking for recommendations for which lining-numerals would match Georgia best. Someone answers to use original georgia numerals, a lot of people express their preference for that drawing, one user recalls a conversation with Matthew Carter where he said:  
-‘In my design of Georgia I used “hybrid” figures similar to the ones in Miller. These are somewhere between “modern” figures that align with the caps and “old-style” lowercase-like figures (and are historically authentic in the Scotch Roman faces on which Miller is based).” After reading more I found out that in the second release the real old style numerals where introduced to avoid confusion created by the in-betweenness of the 'hybrid' forms.
+I've never used Georgia that often so I was surprised to find out that distinctive feature. Lack of lining figures seems like a result of a rather bold design choice, at least unconventional. On an online typedesign forum, Typophile, I found a 2009 discussion, started by someone looking for recommendations for lining-numerals that would match Georgia best. A few people suggest: use /original/ georgia numerals. Following that, more people express their preference for the initial set of slightly bigger digits. One user recalls a conversation with Matthew Carter:  
+‘In my design of Georgia I used “hybrid” figures similar to the ones in Miller. These are somewhere between “modern” figures that align with the caps and “old-style” lowercase-like figures (and are historically authentic in the Scotch Roman faces on which Miller is based).” The 'hybrid' forms were old-style'd last minute, just before the second release. 
 
 	
 R. Austin 1234567890
 
-That set of numerals is a screenshot of Bell as it is presented in The Elements of Typographic Style. Robert Bringhurst suggests that the proportions introduced by Richard Austin in 1788 were punchcutters’ translations of numerals handwritten on placards and shop signs, and therefore a british middle-class invention. Analysing how the  the following 
+Set of numerals from Bell typeface as it is presented in The Elements of Typographic Style. Robert Bringhurst suggests that the proportions introduced by Richard Austin in 1788 were punchcutters’ interpretations of numbers handwritten by shopkeepers on placards and shop signs. They are approximately two-thirds of the cap-height. Caught in a different context, they are a street-level decoy slowly growing to match the height of capital letters.
 
-“They are basic parts of typographic speech, and they are a sign of civilization: a sign that dollars are not really twice as important as ideas, and numbers are not afraid to consort on an equal footing with words.”
+
  
 
 987654321 
