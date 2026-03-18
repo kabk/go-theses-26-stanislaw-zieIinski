@@ -47,20 +47,34 @@ At that time hindu-arabic numerals were already known in Europe for a few centur
 
 23456789
               IO
-The Sholes & Glidden Type Writer from 1874 only typed capital letters. It had a qwerty keyboard — a result of optimisation for telegraphic communication and typing convenience. The top row included digits from "2" to "9", a similar decision to that of printers' of Treviso Arithmetic was made, I and O typed both digits and letters, producing the same mechanical motion but a different meaning for the human readers.
+The Sholes & Glidden Type Writer from 1874 only typed capital letters. It had a qwerty keyboard — a result of optimisation for telegraphic communication and typing convenience. The top row included digits from "2" to "9", a similar decision to that of printers' of Treviso Arithmetic was made, I and O typed both digits and letters, producing the same movement in the machine but a different meaning for the human readers.
+   
 
 
 1234567890
-In his article “Oh! Oh! Zero!” Charles Bigelow discusses the results of that merging and their traces in modern type design covering examples ranging from 15th century type to recent developments. 
+As text entry interfaces continued to develop, lowercase letters, zero and eventually the digit 1 found their place on the standardised keyboards. Different movement in the machine, but a confusion for the human reader. "Wired to an undernet of imperceptible connections and lines, she decrypts and encodes, switching and swapping in the exchange." Whether it had to do with letter shapes constrained by manufacturing possibilities, or later, the small screen resolutions, the visual proximity of '0' and 'O' started to complicate the exchange of information. Call signs, codes, number-lines, registration plates made perfect use of the 'extended alphabet'; but '1' could be mistaken for lowercase 'l' more often. Charles Bigelow who, together with Kris Holmes,  worked on a unicode standardised font, discusses the growth of letters and digits in his text "Oh, Oh, Zero!". 
+
+1234567890 Sabon next(oldstyle)
+1234567890 Zapf — Introducing alternate 0 character
+1234567890 lucida – as an example of typeface with default slashed zero, perhaps coming from typewriters
+1234567890 FE-Schrift as an example of the “removal” 
+1234567890 Viafont – Peculiar shapes, something in between the slashed zero and Zapf’s ‘top terminal’.
+
 1234567890
-I was interested in more of those readability issues, I found a study with low resolution numerals on dot matrix displays. The studies results are somehow underwhelming, usually all of th. I think because of the nature of hand-writing we do not think of them as shapes rather as strokes. 
-Similar study was conducted here: 1234567890 1234567890 Linclon Mitre and Leroy.
+1234567890
+1234567890
+1234567890
+1234567890
+1234567890
+
+I was interested in more of those readability issues, I found a study with low resolution numerals on dot matrix displays. The studies results are somehow underwhelming, usually all of. I think because of the nature of hand-writing we do not think of them as shapes rather as strokes. 
+
+Similar study was conducted here: 
+1234567890 1234567890 Linclon Mitre / Leroy
 
 E13B
 A typeface designed for magnetic character recognition (MICR) interests me as it clearly influenced the visual culture and advertising. Typefaces like calculator or data70 by Bob Newman simulated the shapes to create an association to the computerised world. 
 
-
-A selective process dependent on   
 
 0123456789
 Donald Knuth numbers from computer modern–the difference between mathematician and a typographer>try and understand the reason for which this occurs. 
@@ -71,28 +85,18 @@ Send from the telescope–It’s interesting to see how the seemingly random arr
 .---- ..--- ...--  ....- ..... -.... --... ---.. ----. ----  
 Morse code notation
 1234567890
-Mnemonic chart
+Mnemonic chart 
 
-1234567890 Linclon/Mitre
-Here referring to Bigelow’s text I want to go through different examples of how 0 was altered in different typefaces in order to gain legibility. 
-
-1234567890 Sabon next(oldstyle)
-1234567890 Zapf — Introducing alternate 0 character
-1234567890 lucida – as an example of typeface with default slashed zero, perhaps coming from typewriters
-1234567890 FE-Schrift as an example of the “removal” 
-1234567890 Viafont – Peculiar shapes, something in between the slashed zero and Zapf’s ‘top terminal’.
-
+----------------------------
+----------------------------
 
 1234567890 Apple math notes introduce smart script, it’s hard to identify if the software is a skeleton based typeface and how it renders in the notes app. Describe how it works. The number shapes slide up... etc.  It’s interesting to see how that interpretes and influences handrwiting at the same time. 
 
 12345 Russian Postcode 
 Similar to the apple notes in a sense that in constraints the handrwiting of the numerals introducing a standard and a grid. 
-Optional:
-1 2 3 4 5 6 7 8 9 0 
-Counter—try to reach out to Bryce Wilner
 
-123456789 from Who Goes There
-found on Language as Symbols a set of numerals introduced in a novel Who Goes There where main character solves a cipher based on the numerals inscribed in a circle shape with two parallel diameters.
+----------------------------
+----------------------------
 
 Ending
 Tools like google lens and apple’s live text allow for copying text directly from images, this makes it easier to access emails phone numbers without the need to remember them — apple on their site says you can reach what you need with one tap. I briefly tested the way it deals with the similiarities between oh and zero, one and lowercase l. > present a few results, images of text in different fonts > The tools are actually struggling to recognise those characters, I couldn’t find any sources on the importance and strategies to deal with that problem during the development of those tools, judging by the recent rapid improvements in ai it might soon become error-free.
@@ -102,3 +106,17 @@ I Z E A S b F B q O
 
 When a numeral turns into a phonetic symbol or an undercover letter-sign it no longer represents its original mathematical properties, through that temporary loss it confuses the machine and suggests a more complex thought process.
 I feel this text is more about my way of observing than numerical forms themselves. When I want to use leetspeak I don’t do it to confuse an algorithm but to suggest a different way of reading. What can be said through graphic design? 
+
+
+
+----------------------------
+----------------------------
+
+Optional:
+1 2 3 4 5 6 7 8 9 0 
+Counter—try to reach out to Bryce Wilner
+
+123456789 from Who Goes There
+found on Language as Symbols a set of numerals introduced in a novel Who Goes There where main character solves a cipher based on the numerals inscribed in a circle shape with two parallel diameters.
+
+
