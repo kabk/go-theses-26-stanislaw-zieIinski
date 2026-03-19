@@ -38,28 +38,25 @@ some parts managed to escape the moot intent of providing a ‘complete answer�
 
 One sub-chapter I found close to the way of thinking that seeks complete asnwers. “Fanciful explanations for the origin of “Arabic” numerals” p.356  A set of six, 'unlikely', hypotheses coined mostly by european monks and histotians, each of them speculates the origins of numerical forms trying to find a script or recipe for the way they were made. Looking for relations between form and meaning they try to reverse engineer them. Ifrah, quite reasonably, criticises those speculations for being ‘sterile’, therefore far away from the truth. Later in the book he provides his own, quite complex, diagrams that simulate possible evolutions and journeys of figure graphemes as they were borrowed, reinterpreted and re-mixed. 
 
-I noticed that my chaotic reading was conditioned by the images I've already seen in other texts and essays, most often directly referencing Ifrah’s book. The most recurring one was perhaps a page from Treviso Arithemtic,1478 , I previously read about it's cultural weight in Sadie Plant’s Zeros+Ones.
+I noticed that my chaotic reading was conditioned by the images I've already seen in other texts and essays, most often directly referencing Ifrah’s book. The most recurring one was perhaps a page from Treviso Arithemtic, 1478.
 
 1234567890
- I’ve found a better reproduction of Treviso’s Arithmetic through British Library's, Incunabula Short Title Catalogue (ISTC). It is available for public access via BEIC Milan Library online viewer. It is an early example of european press work.
+I’ve found a better reproduction of Treviso’s Arithmetic through British Library's, Incunabula Short Title Catalogue (ISTC). It is available for public access via BEIC Milan Library online viewer.
 
 At that time hindu-arabic numerals were already known in Europe for a few centuries. The growth of printing press, and the following standardisation influenced the shapes of the digits, early calendars show that quite well. Treviso Arithmetic however seems to use the characters for lowercase “i” and “o” to represent one and zero accordingly. Punchuctters’ and/or printers’ decisions to fuse them could have been dictated by the ever-present longing for efficiency. Forging additional characters would require extra work which would influence the economy of production. There was a trust put in the reader. I can’t be sure if the financial gain, or time savings were the deciding factors behind those choices, maybe they were already close enough and to make similar shapes was thought of as simply unnecessary, even looking at the poor quality online copy, unaware of the writing conventions from that period, the context in which those characters appear on the page is enough to tell their functions apart.  
 
 23456789
               IO
-The Sholes & Glidden Type Writer from 1874 only typed capital letters. It had a qwerty keyboard — a result of optimisation for telegraphic communication and typing convenience. The top row included digits from "2" to "9", a similar decision to that of printers' of Treviso Arithmetic was made, I and O typed both digits and letters, producing the same movement in the machine but a different meaning for the human readers.
-   
-
-
+l234567890
 1234567890
-As text entry interfaces continued to develop, lowercase letters, zero and eventually the digit 1 found their place on the standardised keyboards. Different movement in the machine, but a confusion for the human reader. "Wired to an undernet of imperceptible connections and lines, she decrypts and encodes, switching and swapping in the exchange." Whether it had to do with letter shapes constrained by manufacturing possibilities, or later, the small screen resolutions, the visual proximity of '0' and 'O' started to complicate the exchange of information. Call signs, codes, number-lines, registration plates made perfect use of the 'extended alphabet'; but '1' could be mistaken for lowercase 'l' more often. Charles Bigelow who, together with Kris Holmes,  worked on a unicode standardised font, discusses the growth of letters and digits in his text "Oh, Oh, Zero!". 
+The Sholes & Glidden Type Writer from 1874 only typed capital letters. The top row of its early-qwerty keyboard included digits from "2" to "9"— a decision similar to the one in Treviso Arithmetic was made, "I" and "O" keys typed both: digits and letters, producing the same movement for the machine but a different meaning for the human operator.
+	As text entry interfaces continued to develop, lowercase letters, zero and eventually the digit 1 found their place on standardised keyboards. Different movement for the machine, but a confusion for the human operator. "Wired to an undernet of imperceptible connections and lines, she decrypts and encodes, switching and swapping in the exchange." Whether it had to do with letter shapes constrained by manufacturing possibilities, or later, the small screen resolutions, the visual proximity of '0' and 'O' started to complicate the exchange of information. Call signs, codes, reference numbers, registration plates made perfect use of the 'extended alphabet'; but '1' could be mistaken for lowercase 'l' more often. Charles Bigelow who, together with Kris Holmes, worked on a unicode standardised font(*footnote what is the uncicode font for me–I never really understood it, it's kind of enigmatic piece of software?), discusses proposed solutions in his text "Oh, Oh, Zero!". 
 
-1234567890 Sabon next(oldstyle)
 1234567890 Zapf — Introducing alternate 0 character
-1234567890 lucida – as an example of typeface with default slashed zero, perhaps coming from typewriters
+1234567890 Fixedsys
 1234567890 FE-Schrift as an example of the “removal” 
 1234567890 Viafont – Peculiar shapes, something in between the slashed zero and Zapf’s ‘top terminal’.
-
+A mono-linear perfectly circular shape, an interrupted loop, almost slashed, didn't really become a standard, more a certain aesthetic or a style option; used for some extreme examples, when an error is more friendly. Perhaps the slash stroke in 1 is a result of similar problems, a typographical solution to a _______ problem!?   
 1234567890
 1234567890
 1234567890
@@ -104,9 +101,10 @@ Most default sans serif fonts do not include old style figures > what’s next i
 
 I Z E A S b F B q O
 
-When a numeral turns into a phonetic symbol or an undercover letter-sign it no longer represents its original mathematical properties, through that temporary loss it confuses the machine and suggests a more complex thought process.
+When a numeral turns into a phonetic symbol it stops being an ideograph, through that temporary loss it confuses the machine and suggests a more complex thought process.
 I feel this text is more about my way of observing than numerical forms themselves. When I want to use leetspeak I don’t do it to confuse an algorithm but to suggest a different way of reading. What can be said through graphic design? 
 
+Univers can be understood as a close study of the limits of rationalization from the human perspective. Frutiger argued that the type should support the visual play against the clear and robust communicative structure. "their forms [modern concrete buldings'] have tension and liveliness—type has to have this things too"
 
 
 ----------------------------
