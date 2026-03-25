@@ -1,14 +1,23 @@
-I often use numbers to shorten my messages. It’s possible thanks to numerals’ homophony with certain english words.  
+Each time I see a number is used to 'shorten' a message I appreciate the slightly strange visual result. Writing in this is way is possible thanks to numerals’ homophony—same pronunciation—with certain english words. What would be a few letters is compressed into one sign that has it's own sound:  
 
 	"gr8"
 
-When typing was done with 9 keys (footnote: standard E.161) it definitely sped up the writing process, today, I think, me and my friends do it mostly to make the messages feel more casual or funny; to change their tone. 
-  
-I also like to render words using the visual similarity between numerals and latin letters; the number ‘0’ replaces the letter ‘O’, lowercase "l" becomes capital "I" and so on. 
+When typing was done with 9 keys (footnote: standard E.161) this 'compression' clearly speeds up the writing process, today, I think amongst my group of friends its mostly used to make messages feel more casual or funny. Another, related, way of using numerals to change the common appearance of a word is to disguise them as latin letters; ‘0’ replaces the letter ‘O’, "1" becomes capital "I" and so on. 
 
 	"0k..."
+        "8r1ng" 
+        "50m3" 
+        "800k5"
 
-Those two writing ‘styles'—textese and leet speak(*Footnote: Explain textese and leetspeak in two sentences)—interest me for the visual quality they bring to the text. They originated in different contexts and addressed different needs. Despite separate objectives, both explore the relation between numerals and letters; they support the standard alphabet(s). (*Footnote: In this text I talk about english language, the latin alphabet and hindu-arabic numerals, since those are the ones I am familiar with;  similar phenomena can be observed in other languages and scripts).
+Those two writing ‘styles' show how numerals can be adopted for other uses than their original purpose. What interests me here is how those movements represent some aspects of our relation to the written forms of language.
+My intention is to explore this through a series of examples—typographic conventions, decisions from the printing industry, writing systems, and contemporary tools—to understand where the overlaps between alphabetic and numeric occur and how they are managed. Those examples interest me mainly for their visual qualities but those should be looked at with an attention to the cultural conditions in which they arose. In this essay I am trying to .........
+
+note 1:
+I'd like to avoid an explanatory sentence in a form of "I am looking at xyz in order to understand what it means to make/interact with xyz today" since I feel it automatically raises the text to some undesired area of seekers of general truths... or does it!?
+note 2:
+Would be good to say already how the numbers influence alphabet is what interests me but idk/
+
+textese and leet speak(*Footnote: Explain textese and leetspeak in two sentences)—interest me for the visual quality they bring to the text. They originated in different contexts and addressed different needs. Despite separate objectives, both explore the relation between numerals and letters; they support the standard alphabet(s). (*Footnote: In this text I talk about english language, the latin alphabet and hindu-arabic numerals, since those are the ones I am familiar with;  similar phenomena can be observed in other languages and scripts).
 
 	1234567890*
 
@@ -43,20 +52,27 @@ I noticed that my chaotic reading was conditioned by the images I've already see
 1234567890
 I’ve found a better reproduction of Treviso’s Arithmetic through British Library's, Incunabula Short Title Catalogue (ISTC). It is available for public access via BEIC Milan Library online viewer.
 
+<add about roman numerals and other existing methods of differentiation>
 At that time hindu-arabic numerals were already known in Europe for a few centuries. The growth of printing press, and the following standardisation influenced the shapes of the digits, early calendars show that quite well. Treviso Arithmetic however seems to use the characters for lowercase “i” and “o” to represent one and zero accordingly. Punchuctters’ and/or printers’ decisions to fuse them could have been dictated by the ever-present longing for efficiency. Forging additional characters would require extra work which would influence the economy of production. There was a trust put in the reader. I can’t be sure if the financial gain, or time savings were the deciding factors behind those choices, maybe they were already close enough and to make similar shapes was thought of as simply unnecessary, even looking at the poor quality online copy, unaware of the writing conventions from that period, the context in which those characters appear on the page is enough to tell their functions apart.  
 
 23456789
               IO
 l234567890
 1234567890
-The Sholes & Glidden Type Writer from 1874 only typed capital letters. The top row of its early-qwerty keyboard included digits from "2" to "9"— a decision similar to the one in Treviso Arithmetic was made, "I" and "O" keys typed both: digits and letters, producing the same movement for the machine but a different meaning for the human operator.
-	As text entry interfaces continued to develop, lowercase letters, zero and eventually the digit 1 found their place on standardised keyboards. Different movement for the machine, but a confusion for the human operator. "Wired to an undernet of imperceptible connections and lines, she decrypts and encodes, switching and swapping in the exchange." Whether it had to do with letter shapes constrained by manufacturing possibilities, or later, the small screen resolutions, the visual proximity of '0' and 'O' started to complicate the exchange of information. Call signs, codes, reference numbers, registration plates made perfect use of the 'extended alphabet'; but '1' could be mistaken for lowercase 'l' more often. Charles Bigelow who, together with Kris Holmes, worked on a unicode standardised font(*footnote what is the uncicode font for me–I never really understood it, it's kind of enigmatic piece of software?), discusses proposed solutions in his text "Oh, Oh, Zero!". 
 
-1234567890 Zapf — Introducing alternate 0 character
+The Sholes & Glidden Type Writer from 1874 only typed capital letters. The top row of its early-qwerty keyboard included digits from "2" to "9"— a decision similar to the one in Treviso Arithmetic was made, "I" and "O" keys typed both: digits and letters, producing the same movement for the machine but a different meaning for the human operator.
+	As text entry interfaces continued to develop, lowercase letters, zero and eventually the digit 1 (*Foonote: )found their place on standardised keyboards. Different movement for the machine, but a confusion for the human operator. "Wired to an undernet of imperceptible connections and lines, she decrypts and encodes, switching and swapping in the exchange." Whether it had to do with letter shapes constrained by manufacturing possibilities, or later, the small screen resolutions, the visual proximity of '0' and 'O' started to complicate the exchange of information.(Ref:D.Wendt) Call signs,  part numbers, storage print-outs, reference numbers, registration plates made perfect use of the 'extended alphabet'; but without context to support the reader, '1' could be mistaken for lowercase 'l' more often. Type designer Charles Bigelow, who, together with Kris Holmes, worked on a unicode standardised font(*footnote what is the unicode font for me–I never really understood it, it's kind of enigmatic piece of software?), discusses proposed solutions in his text "Oh, Oh, Zero!". 
+
+What period is covered>which examples are discussed>how the technology makes the ocr obsolete>look in the past>a dispute between humanists and ?scientists? wish for control
+
+1234567890 Garamond 
+1234567890 Zapf — In a response to A. G. Vertbadian
 1234567890 Fixedsys
 1234567890 FE-Schrift as an example of the “removal” 
 1234567890 Viafont – Peculiar shapes, something in between the slashed zero and Zapf’s ‘top terminal’.
-A mono-linear perfectly circular shape, an interrupted loop, almost slashed, didn't really become a standard, more a certain aesthetic or a style option; used for some extreme examples, when an error is more friendly. Perhaps the slash stroke in 1 is a result of similar problems, a typographical solution to a _______ problem!?   
+
+
+
 1234567890
 1234567890
 1234567890
@@ -69,12 +85,10 @@ I was interested in more of those readability issues, I found a study with low r
 Similar study was conducted here: 
 1234567890 1234567890 Linclon Mitre / Leroy
 
-E13B
+
+E13B the previous ones examin the human legibility but   this one focues on remaining legible to the machine >
 A typeface designed for magnetic character recognition (MICR) interests me as it clearly influenced the visual culture and advertising. Typefaces like calculator or data70 by Bob Newman simulated the shapes to create an association to the computerised world. 
 
-
-0123456789
-Donald Knuth numbers from computer modern–the difference between mathematician and a typographer>try and understand the reason for which this occurs. 
 
 1234567890 
 Send from the telescope–It’s interesting to see how the seemingly random arrangements still contain trace of known-forms of numerals.  
@@ -86,11 +100,13 @@ Mnemonic chart
 
 ----------------------------
 ----------------------------
-
-1234567890 Apple math notes introduce smart script, it’s hard to identify if the software is a skeleton based typeface and how it renders in the notes app. Describe how it works. The number shapes slide up... etc.  It’s interesting to see how that interpretes and influences handrwiting at the same time. 
+Handwriting proposed by R.W. Bemer clearly addresses disambiguation between letters and numbers but it reminds me of an attempt to artificially constrain handwriting not by a style or a conventnion but by graphical exposure I want to look at two examples postcodes in Russia which kind of gave birth to certain convntion of writing. With a common goal of eliminating confusion a simple grid came in as a graphical reminder of remaining legible to others. 
 
 12345 Russian Postcode 
 Similar to the apple notes in a sense that in constraints the handrwiting of the numerals introducing a standard and a grid. 
+
+1234567890 Apple math notes introduce smart script, it’s hard to identify if the software is a skeleton based typeface and how it renders in the notes app. Describe how it works. The number shapes slide up... etc.  It’s interesting to see how that interpretes and influences handrwiting at the same time. 
+
 
 ----------------------------
 ----------------------------
@@ -106,6 +122,9 @@ I feel this text is more about my way of observing than numerical forms themselv
 
 Univers can be understood as a close study of the limits of rationalization from the human perspective. Frutiger argued that the type should support the visual play against the clear and robust communicative structure. "their forms [modern concrete buldings'] have tension and liveliness—type has to have this things too"
 
+////
+A mono-linear perfectly circular shape(Garamond), an cut-out(FE Schrift), a negative inner-shape(fixed sys).  Didn't really become a standard, more a certain aesthetic or a style option; used for some extreme examples, when an error is more friendly. Perhaps the slash stroke in 1 is a result of similar problems, a typographical solution to a _______ problem!?   
+
 
 ----------------------------
 ----------------------------
@@ -117,4 +136,13 @@ Counter—try to reach out to Bryce Wilner
 123456789 from Who Goes There
 found on Language as Symbols a set of numerals introduced in a novel Who Goes There where main character solves a cipher based on the numerals inscribed in a circle shape with two parallel diameters.
 
+0123456789
+Donald Knuth numbers from computer modern–the difference between mathematician and a typographer>try and understand the reason for which this occurs. 
+
+“Think of nothing, he told himself firmly, go to sleep. Think of nothing. . . . And he thought of nothing. The circle. The round empty circle. What was I times 0? The same as II times 0. What if you put I beside 0, what would that figure be, 10?”
+
+Excerpt From
+The Masters
+Ursula K. Le Guin
+This material may be protected by copyright.
 
