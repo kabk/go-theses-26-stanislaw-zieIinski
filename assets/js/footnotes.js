@@ -1,5 +1,6 @@
 const FOOTNOTES = {
   1: "This is the footnote text.",
+  2: 'This is a crazy example of an image.And I need to make that text longer...<img src="https://picsum.photos/100/100?random=2"><p>This is a crazy example of an image.And I need to make that text longer...</p>',
 };
 
 document.addEventListener("DOMContentLoaded", function () {

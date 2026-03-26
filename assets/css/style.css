@@ -166,8 +166,16 @@ footer {
 
 .footnote {
   display: none;
-  margin: 2em;
+  padding: 1em;
+  width: 100%;
 }
+
+.footnote img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 .footnote.visible {
   display: block;
 }
