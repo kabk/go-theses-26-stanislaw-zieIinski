@@ -56,6 +56,13 @@
       </header>
 
       <main>
+        <section id="test-foonote">
+          BIG test of a foonote.<sup fn-index="1"><a href="#fn1">1 </a></sup>
+          I don't know if this is the best way, but I think having an array in a
+          js file might be more handy than putting them in html. I think it's
+          better than a csv file for that use case.
+        </section>
+
         <section id="test-text"></section>
       </main>
 
@@ -74,7 +81,9 @@
     <!-- end webpage content -->
 
     <!-- website script right before closing bodytag -->
+
     <script type="text/javascript" src="assets/js/script.js?ver=1.0"></script>
+    <script type="text/javascript" src="assets/js/footnotes.js"></script>
     <script>
       async function insertTestText() {
         const response = await fetch("./assets/test-text.txt");
