@@ -1,22 +1,12 @@
-// we make sure the JavaScript file loads after our HTML by using a function test if the HTML is loaded
+document.addEventListener("DOMContentLoaded", function () {
+  const IDLE_DELAY = 7000;
+  const TICK_RATE = 200;
 
-function docReady(fn) {
-  // see if DOM is already available
-  if (
-    document.readyState === "complete" ||
-    document.readyState === "interactive"
-  ) {
-    // call on next available tick
-    setTimeout(fn, 1);
-  } else {
-    document.addEventListener("DOMContentLoaded", fn);
-  }
-}
-
-docReady(function () {
-  //  SCRIPT FOR LEET A TAGZ
-
-  const letters2numbers = {
+  const charMap = {
+    two: "2",
+    free: "3",
+    for: "4",
+    to: "2",
     a: "4",
     e: "3",
     i: "1",
@@ -26,48 +16,140 @@ docReady(function () {
     z: "2",
     g: "9",
   };
-  const anchors = document.querySelectorAll("a");
 
-  anchors.forEach(function (anchor) {
-    anchor.addEventListener("mouseover", function () {
-      const originalText = anchor.textContent;
+  const mapPattern = new RegExp(
+    Object.keys(charMap)
+      .sort((a, b) => b.length - a.length)
+      .join("|"),
+    "gi",
+  );
 
-      // store original text
-      if (!anchor.dataset.original) {
-        anchor.dataset.original = originalText;
-      }
-
-      let chars = originalText.split("");
-      let replaceableLetters = [];
-
-      chars.forEach(function (char, index) {
-        if (letters2numbers[char.toLowerCase()]) {
-          replaceableLetters.push(index);
-        }
+  function findOpportunities(text) {
+    const result = [];
+    mapPattern.lastIndex = 0;
+    let m;
+    while ((m = mapPattern.exec(text)) !== null) {
+      result.push({
+        start: m.index,
+        end: m.index + m[0].length,
+        replacement: charMap[m[0].toLowerCase()],
       });
+    }
+    return result;
+  }
 
-      // if nothing can be replaced, stop
-      if (replaceableLetters.length === 0) {
-        return;
+  function shouldSkip(node) {
+    let el = node.parentElement;
+    while (el) {
+      if (el.tagName === "BUTTON" || el.classList.contains("footnote"))
+        return true;
+      el = el.parentElement;
+    }
+    return false;
+  }
+
+  const UPDATE_DELAY = 300; // ms after last event before restoring
+
+  let originals = null;
+  let opportunities = [];
+  let tickInterval = null;
+  let idleTimer = null;
+  let activityTimer = null;
+
+  function storeOriginals() {
+    originals = new Map();
+    const walker = document.createTreeWalker(
+      document.body,
+      NodeFilter.SHOW_TEXT,
+    );
+    let node;
+    while ((node = walker.nextNode())) {
+      if (node.textContent.trim() === "") continue;
+      if (shouldSkip(node)) continue;
+      originals.set(node, node.textContent);
+    }
+  }
+
+  function buildOpportunities() {
+    opportunities = [];
+    for (const [node, text] of originals) {
+      for (const opp of findOpportunities(text)) {
+        opportunities.push({ node, ...opp });
       }
+    }
+  }
 
-      const maxSwaps = Math.min(10, replaceableLetters.length);
+  function applyRandom() {
+    if (opportunities.length === 0) {
+      stopTicking();
+      return;
+    }
+    const idx = Math.floor(Math.random() * opportunities.length);
+    const { node, start, end, replacement } = opportunities[idx];
 
-      for (let i = 0; i < maxSwaps; i++) {
-        const randomPos = Math.floor(Math.random() * replaceableLetters.length);
-        const charIndex = replaceableLetters.splice(randomPos, 1)[0];
+    node.textContent =
+      node.textContent.slice(0, start) +
+      replacement +
+      node.textContent.slice(end);
 
-        const letter = chars[charIndex].toLowerCase();
-        chars[charIndex] = letters2numbers[letter];
+    const delta = replacement.length - (end - start);
+    opportunities.splice(idx, 1);
+    for (const opp of opportunities) {
+      if (opp.node === node && opp.start >= end) {
+        opp.start += delta;
+        opp.end += delta;
       }
+    }
+  }
 
-      anchor.textContent = chars.join("");
+  function startTicking() {
+    if (tickInterval) return;
+    if (!originals) storeOriginals();
+    buildOpportunities();
+    if (opportunities.length === 0) return;
+    tickInterval = setInterval(applyRandom, TICK_RATE);
+  }
+
+  function stopTicking() {
+    clearInterval(tickInterval);
+    tickInterval = null;
+  }
+
+  function onActivity() {
+    stopTicking();
+    clearTimeout(activityTimer);
+    clearTimeout(idleTimer);
+    activityTimer = setTimeout(function () {
+      if (originals)
+        for (const [node, text] of originals) node.textContent = text;
+      idleTimer = setTimeout(startTicking, IDLE_DELAY);
+    }, UPDATE_DELAY);
+  }
+
+  const scrollTarget = document.querySelector(".page-wrapper") || document;
+  scrollTarget.addEventListener("scroll", onActivity, { passive: true });
+  ["mousemove", "keydown", "click", "touchend"].forEach(function (evt) {
+    document.addEventListener(evt, onActivity, { passive: true });
+  });
+
+  idleTimer = setTimeout(startTicking, IDLE_DELAY);
+
+  // Click anywhere on the header scrolls to the abstract section.
+  const header = document.querySelector("header");
+  const abstract = document.getElementById("abstract");
+  if (header && abstract) {
+    header.addEventListener("click", function () {
+      abstract.scrollIntoView({ behavior: "smooth" });
     });
+  }
 
-    anchor.addEventListener("mouseout", function () {
-      if (anchor.dataset.original) {
-        anchor.textContent = anchor.dataset.original;
-      }
-    });
+  document.querySelectorAll("figure img").forEach(function (img) {
+    var wrap = document.createElement("div");
+    wrap.className = "img-wrap";
+    img.parentNode.insertBefore(wrap, img);
+    wrap.appendChild(img);
+    var overlay = document.createElement("div");
+    overlay.className = "img-overlay";
+    wrap.appendChild(overlay);
   });
 });
