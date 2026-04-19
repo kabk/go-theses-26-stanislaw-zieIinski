@@ -1,4 +1,4 @@
-When I see a number is used to 'shorten' a message I appreciate the visual result it produces. Writing in this is way is possible thanks to numerals’ homophony with certain English words, that is their shared pronunciation. What would originally be written as a few letters is being compressed into one sign, that has it's own sound:  
+Whenever I see a number is used to 'shorten' a message I appreciate the slightly odd visual that produces. Writing in this is way is possible thanks to numerals’ homophony with certain English words, that is their shared pronunciation. What would originally be written as a few letters is being compressed into one sign, that has it's own sound:  
 
 	"gr8"
 
@@ -12,16 +12,8 @@ When typing is done with 9 keys it can speed up the writing process.(Footnote: S
 Those two writing ‘styles' show how symbols, in this case numerals, are adopted for uses other than their original purpose. What interests me is how they are shifting between visual, phonetic, and symbolic roles across different contexts.
 My intention is to explore this through a series of examples—  typographic and print conventions, narratives of mathematical notations' history, reports from type legibility studies, and a selection of contemporary tools—to understand where the overlaps between alphabetic and numeric occur and how they are managed.
 
-note 1:
-I'd like to avoid an explanatory sentence in a form of "I am looking at xyz in order to understand what it means to make/interact with xyz today" since I feel it automatically raises the text to some undesired area of seekers of general truths... or does it!?
-note 2:
-Would be good to say already how the numbers influence alphabet is what interests me but idk/
-note 3: 1 example per each:
- typographic conv.—ocr o and 0, ren. type
-leroy linclon—legibility studies
-contemporary tools— from typewriters to open type features
 
-textese and leet speak(*Footnote: Explain textese and leetspeak in two sentences)—interest me for the visual quality they bring to the text. They originated in different contexts and addressed different needs. Despite separate objectives, both explore the relation between numerals and letters; they support the standard alphabet(s). (*Footnote: In this text I talk about english language, the latin alphabet and hindu-arabic numerals, since those are the ones I am familiar with;  similar phenomena can be observed in other languages and scripts).
+(*Footnote: Explain textese and leetspeak in two sentences)—interest me for the visual quality they bring to the text. They originated in different contexts and addressed different needs. Despite separate objectives, both explore the relation between numerals and letters; they support the standard alphabet(s). (*Footnote: In this text I talk about english language, the latin alphabet and hindu-arabic numerals, since those are the ones I am familiar with;  similar phenomena can be observed in other languages and scripts).
 
 	1234567890* 1234567890*
 	1234567890* 1234567890*
@@ -29,32 +21,42 @@ Description:
 Numerals 0–9. Set in widely used sans-serif typefaces San Francisco, Roboto, Open Sans and Arial. 
 
 A default set of numerals, arranged in the order they appear on most phone and computer keyboards in widespread use today. I know this set as lining numerals—a term that belongs to a naming scheme shared by design software and Unicode conventions. The name describes a specific behaviour: lining numerals sit on the baseline and share uniform height, which in most typefaces is set to match, or come very close to, the height of capital letters. 
-If a font contains the necessary glyphs, software settings make it possible to display a slightly different set of numerals. (Footnote: The most common ways I encounter this option are: in a design application like InDesign, through the character or paragraph style panels; and on the web, through CSS, by adjusting the font-variant-numeric property.)
+If a font contains the necessary glyphs, software settings make it possible to display a slightly different set of numerals. (Footnote: I usually this options in a design applications, e.g.: InDesign; and in web development by describing the font properties in a stylesheet language document.)
 	
 1234567890
 Description:
 Numerals 0–9. Set in Georgia. 
 
-'Oldstyle' numerals — also called text figures — are generally described as more comfortable to read within a running text. This feeling is usually attributed to the way they settle into the pattern created by lowercase letters. Unlike lining numerals, oldstyle figures vary in height: some have ascenders that rise above the x-height, some have descenders that drop below the baseline, and a few sit exacly within the x-height bounds. The shapes themselves are also subtly modified.  Therefore the old style version of the numeral “9” is much closer to the lowercase ‘q’ or a single-storey ‘g’ than its lining substitute. 
-Out of the nine web-safe typefaces, only one — Georgia — uses oldstyle figures by default.(Footnote: Web safe fonts according to W3 schools: https://www.w3schools.com/cssref/css_websafe_fonts.php) In fact, the standard version of the font does not include lining numerals at all. Georgia was designed by Matthew Carter for Microsoft as a serif companion to the sans-serif Verdana. The foundry's website describes the aim as producing a typeface that was sturdy and dependable, built for legibility on screen. Microsofts
-The first, basic version was released in 1996.
+'Oldstyle' numerals — also called text figures — are generally referred to as more comfortable to read within a running text. This feeling is usually attributed to the way they fit into the pattern created by lowercase letters. Unlike lining numerals they vary in height: some have ascenders that rise above the x-height, some have descenders that drop below the baseline, others sit within the x-height bounds. This way the old style version of the numeral “9” is much closer to the lowercase ‘q’ or a single-storey ‘g’ than its lining substitute. 
+Out of the nine web-safe typefaces, only one — Georgia — uses oldstyle figures by default.(Footnote: Web safe fonts according to W3 schools: https://www.w3schools.com/cssref/css_websafe_fonts.php) In fact, the standard version of the font does not include lining numerals at all. Georgia was designed by Matthew Carter for Microsoft as a sturdy, dependable typeface for online reading on low-resolutions of screens at a time – the first version was released in 1996. Today Microsoft's website points to its numerals as one of the most important features, describing them as 'slightly non-aligning', which they say is 'a characteristic that imparts a flavor of individuality to any page set in Georgia.' (ref.carter&cone) I had never consciously noticed before, that the basic version of Georgia is limited to oldstyle figures . Online forums hold a few threads where people complain about misaligned numbers in that font, one user of Typophile was looking for recommendations of lining numerals that would pair well with Georgia. In the response section people suggested to use the /original/ Georgia numerals. In a discussion that follows, more users express their preference for the set of slightly bigger digits from Georgia's initial release. 
 
-	Georgia1.0 234567890
+Georgia1.0 23456789 
 Description:
 Numerals 0–9. Set in Georgia 1.0 with the 'hybrid' numerals forms. 
 
-I've never used Georgia that often so I was surprised to find out that distinctive feature. Lack of lining figures seems like a result of a rather bold design choice, at least unconventional. On an online typedesign forum, Typophile, I found a 2009 discussion, started by someone looking for recommendations for lining-numerals that would match Georgia best. A few people suggest: use /original/ georgia numerals. Following that, more people express their preference for the initial set of slightly bigger digits. One user recalls a conversation with Matthew Carter:  
-‘In my design of Georgia I used “hybrid” figures similar to the ones in Miller. These are somewhere between “modern” figures that align with the caps and “old-style” lowercase-like figures (and are historically authentic in the Scotch Roman faces on which Miller is based).” The 'hybrid' forms were old-style'd last minute, just before the second release. 
+Further on, one user referenced his conversation with Matthew Carter, in which the designer described the original drawing of Georgia's figures as 'hybrid'–somewhere between lining and ranging numerals. For the second release of Georgia the 'hybrid' numerals were transformed into more conventional, oldstyle forms — it seems a decision dictated by the need of a stronger stylistic choice, and perhaps to emphasise the text focus of the typeface. Those in-between shapes are historically authentic for the Scotch Roman typefaces that inspired a few of Carter's designs in the 1990s.
 
 	
 R. Austin 1234567890
+Description: Set of figures from the typeface "Bell" by Richard Austin for Joseph Bell. 
 
-Set of figures from the typeface "Bell" as it is presented in The Elements of Typographic Style. Robert Bringhurst suggests that the proportions introduced by Richard Austin in 1788 were punchcutters’ interpretations of numbers handwritten by shopkeepers on placards and shop signs. They are approximately two-thirds of the cap-height. Caught in a different context, they are a street-level decoy, slowly growing to match the height of capital letters. Was it an attempt to separate them from the alphabet and give them their own case? 
+"Bell," a typeface cut in 1788 by the British punchcutter Richard Austin for the British Letter Foundry, is often mentioned as the one that popularised the lining numerals and influenced the later Scotch Roman faces mentioned by Carter. Each number in 'Bell' is the same height, approximately three-quarters of the capital letters—a rarely seen feature in typefaces today. Yet, in his book Letters of Credit (1986), Walter Tracy, a British type designer, writes that the numeral forms of 'Bell' "blend well with the lowercase alphabet," and traces their uniform heights back to large letterforms from the Caslon foundry in the 1780s. The reason for the transformation itself is believed to be an answer to the growing need for shop signs and placards on the British streets in the 18th century, where numerals informed the public about the prices. Digital reproductions of various type specimens from the 1780s seem to support that theory, as the early examples of lining numerals were indeed presented mostly in larger type sizes with a currency symbol next to them. In those specimens the smaller sizes, naturally still use the oldstyle figures; to me, the three-quarters-height numerals from "Bell," are a compromise between the loud window-display lure for customers and a more gentle image of a digit for the readers.
+
+A similar mention of Bell can be found in one of the most influential books on typography—The Elements of Typographic Style by a Canadian typographer Robert Bringhurst. It is a collection of typographic principles discussed in an open way tracing various tendencies in the field. In a section dedicated to numerals, capitals and small caps, speculating on the origin of lining figures, he points towards the 19th century typographers who 'stretched these [Bell's] figures up to cap height' thus making them a norm in commercial typography. He names the later visible lack of oldstyle figures in fonts like Frutiger's Méridien or Zapf's Comenius calling it a possible 'commercial censorship' calling for a retroactive supply of oldstyle numbers to typefaces that have been issued without.
+
+That journey from the ranging to lining figures makes me wonder why the Hindu-Arabic numeral forms have not developed in similar way as the Roman alphabet—perhaps changing from lining to oldstyle would be as easy and common as changing from lowercase to uppercase and wouldn't be reserved for typographers. 
+
+When Europe was  and in fact it was a common practice in early days of printing—Bringhurst says: harmonically fit into the pattern of letters. 
 
 
  
 
+***
+
 987654321 
+
+
+
 The figure above is a set of numerals presented as an “indian wonder” in Codex Vigilanus—a compilation of historical documents , assembled around 10th century in, what is now, southern Spain. Throughout my search for this project I've seen many reproductions of that image, often mentioned as the first work that introduced the hindu-arabic numerals to Europe. Eventually it led me to G. Ifrah’s “The universal history of numbers”—an attempt to present the origins of the world counting systems. In the foreword it says: “(...)the full and complete answer to all and any questions that anyone might want to ask about the history of numbers and of counting, from prehistory to the age of computers.” (footnote: Ifrah, Numbers.. no page number)
 some parts managed to escape the moot intent of providing a ‘complete answer’ . The book interests me for it’s variety of graphical symbols that aim to compress and compare the complex systems used to signify counting across history. The illustrations themselves could be used as a visual history of the development of mathematical thought, they are ordered, structured and analysed perhaps aiming at'universality' but strictly bound to conventions of an encyclopaedic book like that. It also has a few negative reviews online, one that classifies Ifrah’s work as a ‘deception’. I continued to browse through the online copy.  It is an intense document, 600+ pages in a square format.
 
@@ -90,7 +92,7 @@ What period is covered>which examples are discussed>how the technology makes the
 1234567890
 1234567890
 1234567890
-1234567890
+1234567890ch
 1234567890
 
 I was interested in more of those readability issues, I found a study with low resolution numerals on dot matrix displays. The studies results are somehow underwhelming, usually all of. I think because of the nature of hand-writing we do not think of them as shapes rather as strokes. 
@@ -158,4 +160,16 @@ Excerpt From
 The Masters
 Ursula K. Le Guin
 This material may be protected by copyright.
+
+
+------------------
+
+note 1:
+I'd like to avoid an explanatory sentence in a form of "I am looking at xyz in order to understand what it means to make/interact with xyz today" since I feel it automatically raises the text to some undesired area of seekers of general truths... or does it!?
+note 2:
+Would be good to say already how the numbers influence alphabet is what interests me but idk/
+note 3: 1 example per each:
+ typographic conv.—ocr o and 0, ren. type
+leroy linclon—legibility studies
+contemporary tools— from typewriters to open type features
 
