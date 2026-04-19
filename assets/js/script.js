@@ -134,12 +134,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   idleTimer = setTimeout(startTicking, IDLE_DELAY);
 
-  // Click anywhere on the header scrolls to the abstract section.
-  const header = document.querySelector("header");
-  const abstract = document.getElementById("abstract");
-  if (header && abstract) {
+const header = document.querySelector("header");
+  if (header && scrollTarget) {
     header.addEventListener("click", function () {
-      abstract.scrollIntoView({ behavior: "smooth" });
+      scrollTarget.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
 

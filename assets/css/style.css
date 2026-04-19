@@ -11,7 +11,7 @@
   font-family: "Free Universal Italic";
   src: url("../FreeUniversal-Italic.ttf") format("truetype");
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
 }
 
 /* 
@@ -25,21 +25,16 @@ ________________________ */
   /* Color values */
   --color-background: rgb(255, 255, 255);
   --color-text: rgba(0, 0, 0, 1);
-  --color-text-link: rgb(60, 0, 255);
+  --color-text-link: rgb(0, 0, 0);
   --color-text-link-hover: rgb(0, 0, 0);
   /* Font values */
-  --font-family: /*"Free Universal",*/
-    "Free Universal", System-UI, Arial, sans-serif;
+  --font-family: "Free Universal", System-UI, Arial, sans-serif;
   --font-size: 26px;
   --font-weight: 900;
-  --line-height: 1.3;
+  --line-height: 1.25;
 
   /* Margin values */
   --margin: 1rem;
-  /* 
-  --font-size-heading: calc(var(--font-size) * 2);
-  --font-size-subheading: calc(var(--font-size) * 1.25);
-  --font-size-caption: calc(var(--font-size) * 0.875); */
 
   --margin-xs: calc(var(--margin) * 0.5);
   --margin-s: calc(var(--margin) * 1);
@@ -74,18 +69,22 @@ body {
   font-weight: 400 !important;
   line-height: var(--line-height);
   overscroll-behavior: none;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  hyphenate-limit-last: always;
 }
 
 a {
   color: var(--color-text-link);
-  /* text-decoration: underline 2px;
-  text-underline-offset: 0.26rem; */
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: currentColor;
 }
 
 a:hover {
   cursor: pointer;
-  text-decoration: underline 3px;
-  /* color: var(--color-text-link-hover); */
+  text-decoration-thickness: 3px;
 }
 
 h1 {
@@ -102,7 +101,6 @@ input {
 }
 ol,
 ul {
-  list-style-type: none;
   padding-inline-start: 0px;
   list-style: none;
   /* ordered list and unordered list styles */
@@ -116,10 +114,19 @@ hr {
   /* horizontal rule style */
 }
 
+#note-on-colour {
+  color: #f19;
+}
+
+#note-on-colour a {
+  color: #f19;
+}
+
 figure {
   font-size: 0.8em;
+  line-height: 1.25;
   padding-top: var(--margin-s);
-  text-align: center;
+  padding-left: var(--margin-l);
 }
 img {
   width: 200px;
@@ -127,10 +134,10 @@ img {
   image-rendering: crisp-edges;
   filter: grayscale(1);
   display: block;
-  margin: 0 auto;
 }
 
 figcaption {
+  padding-top: var(--margin-xs);
   color: #f19;
 }
 sup {
@@ -167,51 +174,40 @@ ________________________ */
 
 header,
 section {
+  position: relative;
   padding-top: var(--margin-s);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
 }
 
 .section-description {
-  width: 100%;
-  text-align: center;
+  width: 40%;
+  flex-shrink: 0;
+  background-color: var(--color-background);
 }
 
 .section-content {
-  width: 100%;
+  width: 60%;
+  container-type: inline-size;
 }
 
-/* sticky only applies inside main and footer sections, not the header */
-main section > .section-description,
-footer section > .section-description {
-  /* position: sticky; */
+@container (max-width: 800px) {
+  figure {
+    padding-left: var(--margin-m);
+  }
+}
+
+header > .section-description,
+section > .section-description {
+  position: sticky;
   top: 0;
-}
-
-/* navigation */
-header {
-  cursor: pointer;
-  text-align: center;
-}
-
-header > .section-description {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-nav {
 }
 
 main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: var(--margin-m);
 }
 
@@ -225,20 +221,15 @@ main > section {
 .section-content > :first-child {
   padding-top: 0;
 }
-footer {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* DEBUG: background tints to see each region */
-
+/* 
 .section-description {
   outline: 1px dashed rgba(0, 0, 0, 0.2);
 }
 .section-content {
   outline: 1px dashed rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* CLASS */
 
@@ -249,21 +240,27 @@ footer {
   cursor: pointer;
 }
 
+sup.footnote-ref::before {
+  content: "[";
+}
+
+sup.footnote-ref::after {
+  content: "]";
+}
+
 .credits-list,
 .bibliography-list {
   font-size: 0.8em;
+  line-height: 1.25;
   width: 100%;
+  column-count: 2;
+  column-gap: var(--margin-s);
 }
 
 .credits-item,
 .bibliography-list-item {
   padding-bottom: var(--margin-s);
   break-inside: avoid;
-}
-
-.bibliography-list {
-  column-count: 2;
-  column-gap: var(--margin-s);
 }
 
 .credits-subtitle {
@@ -274,21 +271,19 @@ footer {
   padding-left: var(--margin-s);
 }
 
-/* fixed left-column container — panels are absolute inside it */
-#footnote-container {
-  display: none;
-}
-
 .footnote {
+  display: none;
   position: absolute;
   left: 0;
-  width: 100%;
-  display: block;
-  overflow-x: hidden;
+  width: calc(40% - var(--margin-s));
   overflow-wrap: break-word;
   font-size: 0.8em;
-  line-height: 1.1em;
-  pointer-events: auto;
+  line-height: 1.25;
+  padding-bottom: var(--margin-s);
+}
+
+.footnote.visible {
+  display: block;
 }
 
 .footnote img {
@@ -298,7 +293,6 @@ footer {
 }
 
 .footnote-text {
-  font-size: 0.7em;
   padding: 0;
 }
 
@@ -314,19 +308,25 @@ footer {
   section {
     flex-direction: column;
   }
-
+  :root {
+    --font-size: 22px;
+  }
   .section-description,
   .section-content {
     width: 100%;
     position: relative !important;
+    margin-left: 0 !important;
+  }
+  .section-content {
+    padding-left: var(--margin-s);
   }
 
   /* .section-description > :first-child {
     padding-top: var(--margin-s);
   }*/
-  .section-content > :first-child {
-    padding-top: var(--margin-s);
-  }
+  /* .section-content > :first-child {
+    padding-top: var(--margin-xs);
+  } */
 
   /* prevent the page from scrolling behind an open footnote overlay */
   .page-wrapper.footnote-open {
@@ -350,47 +350,21 @@ footer {
     top: auto;
     left: 0;
     width: 100vw;
+    height: fit-content;
     max-height: 70vh;
     overflow-y: auto;
     z-index: 100;
     padding: var(--margin-s);
     background-color: var(--color-background);
-    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -8px 32px -4px rgba(0, 0, 0, 0.2);
     pointer-events: auto;
-  }
-  a {
-    text-underline-offset: 0.3em;
-  }
-
-  .bibliography-list {
-    column-count: 1;
-  }
-
-  .footnote-text {
-    width: 95%;
-  }
-  .footnote-close {
-    position: fixed;
-    display: flex;
-    right: var(--margin-s);
-    background: none;
-    border: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    cursor: pointer;
-    line-height: 1;
   }
 }
 
-/* @media (min-width: 1600px) {
-  .page-wrapper {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+@media (max-width: 800px) {
+  .credits-list,
+  .bibliography-list {
+    column-count: 1;
+    font-size: var(--font-size);
   }
-
-  #footnote-container {
-    left: calc((100vw - 1600px) / 2 + var(--margin-s));
-    width: calc(1600px * 0.4 - 2 * var(--margin-s));
-  }
-} */
+}
