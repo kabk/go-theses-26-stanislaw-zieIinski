@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "Free Universal";
-  src: url("../fonts/FreeUniversal/FreeUniversal-Regular.ttf") format("truetype");
+  src: url("../fonts/FreeUniversal/FreeUniversal-Regular.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -132,7 +133,6 @@ figure {
 img {
   width: 200px;
   height: auto;
-  image-rendering: crisp-edges;
   filter: grayscale(1);
   display: block;
 }
@@ -376,5 +376,13 @@ sup.footnote-ref::after {
   .bibliography-list {
     column-count: 1;
     font-size: var(--font-size);
+  }
+}
+
+@media (min-width: 1800px) {
+  .page-content {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
