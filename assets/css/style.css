@@ -310,6 +310,10 @@ sup.footnote-ref::after {
   section {
     flex-direction: column;
   }
+
+  section {
+    padding-top: 0;
+  }
   :root {
     --font-size: 22px;
   }
@@ -325,12 +329,10 @@ sup.footnote-ref::after {
   .section-description {
     background-color: var(--color-background);
     z-index: 99;
-    padding-top: 0;
+    padding-top: var(--margin-s);
     padding-bottom: var(--margin-s);
   }
-  header .section-description {
-    padding-top: var(--margin-s);
-  }
+
   .section-content {
     position: relative !important;
     padding-left: var(--margin-s);
