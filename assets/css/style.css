@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: "Free Universal";
-  src: url("../FreeUniversal-Regular.ttf") format("truetype");
+  src: url("../fonts/FreeUniversal/FreeUniversal-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Free Universal Italic";
-  src: url("../FreeUniversal-Italic.ttf") format("truetype");
+  src: url("../fonts/FreeUniversal/FreeUniversal-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
