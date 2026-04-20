@@ -57,6 +57,7 @@ html {
   background-color: var(--color-background);
   -webkit-text-size-adjust: 100%;
   overscroll-behavior: none;
+  height: auto;
 }
 
 body {
@@ -67,7 +68,6 @@ body {
   color: var(--color-text);
   width: 100%;
   height: auto;
-  overflow-y: auto;
   font-weight: 400 !important;
   line-height: var(--line-height);
   overscroll-behavior: none;
@@ -165,8 +165,6 @@ ________________________ */
 .page-wrapper {
   /* the element that 'wraps' everything */
   padding: var(--margin-s);
-  height: 100vh;
-  overflow-y: scroll;
 }
 
 .page-wrapper > :first-child,
@@ -187,6 +185,11 @@ section {
   width: 40%;
   flex-shrink: 0;
   background-color: var(--color-background);
+  padding-top: var(--margin-s);
+}
+
+header > .section-description {
+  padding-top: 0;
 }
 
 .section-content {
@@ -302,6 +305,10 @@ sup.footnote-ref::after {
   display: none;
 }
 
+.footnotes-list {
+  display: none;
+}
+
 /* WEBSITE MEDIA QUERIES */
 /* responsive typeface for various breaking points, sets the default 'rem' value */
 
@@ -333,6 +340,10 @@ sup.footnote-ref::after {
     padding-bottom: var(--margin-s);
   }
 
+  header > .section-description {
+    padding-top: var(--margin-s);
+  }
+
   .section-content {
     position: relative !important;
     padding-left: var(--margin-s);
@@ -346,7 +357,7 @@ sup.footnote-ref::after {
   } */
 
   /* prevent the page from scrolling behind an open footnote overlay */
-  .page-wrapper.footnote-open {
+  body.footnote-open {
     overflow: hidden;
   }
 

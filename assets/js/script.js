@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, UPDATE_DELAY);
   }
 
-  const scrollTarget = document.querySelector(".page-wrapper") || document;
+  const scrollTarget = window;
   scrollTarget.addEventListener("scroll", onActivity, { passive: true });
   ["mousemove", "keydown", "click", "touchend"].forEach(function (evt) {
     document.addEventListener(evt, onActivity, { passive: true });
@@ -135,9 +135,9 @@ document.addEventListener("DOMContentLoaded", function () {
   idleTimer = setTimeout(startTicking, IDLE_DELAY);
 
 const header = document.querySelector("header");
-  if (header && scrollTarget) {
+  if (header) {
     header.addEventListener("click", function () {
-      scrollTarget.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
 

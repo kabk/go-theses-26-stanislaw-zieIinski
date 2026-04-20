@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const pageWrapper = document.querySelector(".page-wrapper");
-
   // Build a footnote panel for every <sup fn-index="N"> in the document.
   // The panel's content comes from the matching <template id="fnN">.
   // If the template has data-see="M", a cross-reference line is appended.
@@ -59,8 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const id = panel.id.replace("fn", "").replace("-panel", "");
     const sup = document.querySelector('sup[fn-index="' + id + '"]');
     if (sup) sup.setAttribute("aria-expanded", "false");
-    if (pageWrapper && !document.querySelector(".footnote.visible")) {
-      pageWrapper.classList.remove("footnote-open");
+    if (!document.querySelector(".footnote.visible")) {
+      document.body.classList.remove("footnote-open");
     }
   }
 
@@ -74,9 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
     panel.setAttribute("aria-hidden", "false");
     const sup = document.querySelector('sup[fn-index="' + id + '"]');
     if (sup) sup.setAttribute("aria-expanded", "true");
-    if (isMobile() && pageWrapper) {
+    if (isMobile()) {
       panel.style.top = "";
-      pageWrapper.classList.add("footnote-open");
+      document.body.classList.add("footnote-open");
     } else {
       const section = panel.parentElement;
       if (section && sup) {
