@@ -327,8 +327,14 @@ sup.footnote-ref::after {
   section {
     padding-top: 0;
   }
+
   :root {
     --font-size: 22px;
+  }
+
+  header > .section-description,
+  section > .section-description {
+    position: relative;
   }
 
   .page-wrapper {
