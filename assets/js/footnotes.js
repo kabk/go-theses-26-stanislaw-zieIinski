@@ -33,8 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (seeRef) {
       const seeSpan = document.createElement("span");
       seeSpan.className = "footnote-text-data-see";
-      seeSpan.textContent =
-        "(See footnote [" + seeRef + "] for original source.)";
+      seeSpan.textContent = "(See footnote [" + seeRef + "])";
       panel.appendChild(seeSpan);
     }
 
