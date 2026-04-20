@@ -312,13 +312,22 @@ sup.footnote-ref::after {
   :root {
     --font-size: 22px;
   }
+  .page-wrapper {
+    padding-top: 0;
+  }
   .section-description,
   .section-content {
     width: 100%;
-    position: relative !important;
     margin-left: 0 !important;
   }
+  .section-description {
+    background-color: var(--color-background);
+    z-index: 99;
+    padding-top: var(--margin-s);
+    padding-bottom: var(--margin-s);
+  }
   .section-content {
+    position: relative !important;
     padding-left: var(--margin-s);
   }
 
