@@ -329,7 +329,7 @@ sup.footnote-ref::after {
   }
 
   :root {
-    --font-size: 22px;
+    --font-size: 20px;
   }
 
   header > .section-description,
