@@ -30,9 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     panel.appendChild(closeBtn);
 
     const clone = li.cloneNode(true);
-    const firstP = clone.querySelector("p");
-    if (firstP) firstP.prepend(id + ". ");
-    else clone.prepend(id + ". ");
     while (clone.firstChild) panel.appendChild(clone.firstChild);
 
     const seeRef = li.getAttribute("data-see");
