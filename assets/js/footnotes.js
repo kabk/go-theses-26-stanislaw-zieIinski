@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sup = document.querySelector('sup[fn-index="' + id + '"]');
     if (sup) sup.setAttribute("aria-expanded", "true");
     if (isMobile() && pageWrapper) {
+      panel.style.top = "";
       pageWrapper.classList.add("footnote-open");
     } else {
       const section = panel.parentElement;
