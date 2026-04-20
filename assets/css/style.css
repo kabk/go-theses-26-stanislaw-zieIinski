@@ -164,18 +164,12 @@ ________________________ */
 
 .page-wrapper {
   /* the element that 'wraps' everything */
-  padding: var(--margin-s);
-}
-
-.page-wrapper > :first-child,
-.page-content > :first-child {
-  padding-top: 0;
+  padding: 0 var(--margin-s) var(--margin-s);
 }
 
 header,
 section {
   position: relative;
-  padding-top: var(--margin-s);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -188,9 +182,9 @@ section {
   padding-top: var(--margin-s);
 }
 
-header > .section-description {
+/* header > .section-description {
   padding-top: 0;
-}
+} */
 
 .section-content {
   width: 60%;
@@ -201,6 +195,10 @@ header > .section-description {
   figure {
     padding-left: var(--margin-m);
   }
+}
+header > .section-description,
+.section-content {
+  padding-top: var(--margin-s);
 }
 
 header > .section-description,
@@ -305,8 +303,16 @@ sup.footnote-ref::after {
   display: none;
 }
 
-.footnotes-list {
-  display: none;
+.footnotes-section {
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+
+.footnotes-section ol {
+  list-style: decimal;
+  padding-inline-start: 1.5em;
 }
 
 /* WEBSITE MEDIA QUERIES */
@@ -346,6 +352,7 @@ sup.footnote-ref::after {
 
   .section-content {
     position: relative !important;
+    padding-top: 0;
     padding-left: var(--margin-s);
   }
 
@@ -386,6 +393,11 @@ sup.footnote-ref::after {
     background-color: var(--color-background);
     box-shadow: 0 -8px 32px -4px rgba(0, 0, 0, 0.2);
     pointer-events: auto;
+  }
+
+  .footnote-text-data-see--link {
+    display: inline;
+    cursor: pointer;
   }
 }
 

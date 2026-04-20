@@ -1,17 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Build a footnote panel for every <sup fn-index="N"> in the document.
-  // The panel's content comes from the matching <template id="fnN">.
-  // If the template has data-see="M", a cross-reference line is appended.
+  // Content comes from the nth <li> in .footnotes-section ol (1-indexed).
+  // If the <li> has data-see="M", a cross-reference line is appended.
   // Each panel is inserted into its own <section> or <header> so that
   // position:absolute placement is relative to that container.
+  const fnItems = document.querySelectorAll(".footnotes-section ol li");
+
   document.querySelectorAll("sup[fn-index]").forEach(function (sup) {
     const id = sup.getAttribute("fn-index");
 
     sup.setAttribute("aria-expanded", "false");
     sup.setAttribute("aria-controls", "fn" + id + "-panel");
 
-    const tmpl = document.getElementById("fn" + id);
-    if (!tmpl) return;
+    const li = fnItems[parseInt(id) - 1];
+    if (!li) return;
 
     const panel = document.createElement("div");
     panel.id = "fn" + id + "-panel";
@@ -27,17 +29,29 @@ document.addEventListener("DOMContentLoaded", function () {
     closeBtn.textContent = "×";
     panel.appendChild(closeBtn);
 
-    const clone = tmpl.content.cloneNode(true);
+    const clone = li.cloneNode(true);
     const firstP = clone.querySelector("p");
     if (firstP) firstP.prepend(id + ". ");
-    panel.appendChild(clone);
+    else clone.prepend(id + ". ");
+    while (clone.firstChild) panel.appendChild(clone.firstChild);
 
-    const seeRef = tmpl.getAttribute("data-see");
+    const seeRef = li.getAttribute("data-see");
     if (seeRef) {
-      const seeSpan = document.createElement("span");
-      seeSpan.className = "footnote-text-data-see";
-      seeSpan.textContent = "(See footnote [" + seeRef + "])";
-      panel.appendChild(seeSpan);
+      if (isMobile()) {
+        const seeBtn = document.createElement("button");
+        seeBtn.className = "footnote-text-data-see footnote-text-data-see--link";
+        seeBtn.textContent = "(See footnote [" + seeRef + "])";
+        seeBtn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          toggle(seeRef);
+        });
+        panel.appendChild(seeBtn);
+      } else {
+        const seeSpan = document.createElement("span");
+        seeSpan.className = "footnote-text-data-see";
+        seeSpan.textContent = "(See footnote [" + seeRef + "])";
+        panel.appendChild(seeSpan);
+      }
     }
 
     const section = sup.closest("section") || sup.closest("header");
