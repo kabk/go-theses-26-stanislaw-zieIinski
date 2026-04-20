@@ -28,7 +28,7 @@ ________________________ */
   --color-text-link: rgb(0, 0, 0);
   --color-text-link-hover: rgb(0, 0, 0);
   /* Font values */
-  --font-family: "Free Universal", System-UI, Arial, sans-serif;
+  --font-family: "Free Universal", Helvetica, Arial, sans-serif;
   --font-size: 26px;
   --font-weight: 900;
   --line-height: 1.25;
@@ -55,6 +55,7 @@ html {
   color: var(--color-text);
   background-color: var(--color-background);
   -webkit-text-size-adjust: 100%;
+  overscroll-behavior: none;
 }
 
 body {

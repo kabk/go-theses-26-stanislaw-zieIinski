@@ -29,6 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
     if (firstP) firstP.prepend(id + ". ");
     panel.appendChild(clone);
 
+    const seeRef = tmpl.getAttribute("data-see");
+    if (seeRef) {
+      const seeSpan = document.createElement("span");
+      seeSpan.className = "footnote-text-data-see";
+      seeSpan.textContent =
+        "(See footnote [" + seeRef + "] for original source.)";
+      panel.appendChild(seeSpan);
+    }
+
     const section = sup.closest("section") || sup.closest("header");
     (section || document.body).appendChild(panel);
   });
@@ -61,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (section && sup) {
         const supRect = sup.getBoundingClientRect();
         const sectionRect = section.getBoundingClientRect();
-        panel.style.top = (supRect.top - sectionRect.top) + "px";
+        panel.style.top = supRect.top - sectionRect.top + "px";
       }
     }
     panel.focus();
@@ -114,17 +123,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Mobile: tap outside closes
   var touchStartX, touchStartY;
-  document.addEventListener("touchstart", function (e) {
-    touchStartX = e.touches[0].clientX;
-    touchStartY = e.touches[0].clientY;
-  }, { passive: true });
+  document.addEventListener(
+    "touchstart",
+    function (e) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    },
+    { passive: true },
+  );
 
-  document.addEventListener("touchend", function (e) {
-    if (!document.querySelector(".footnote.visible")) return;
-    var dx = Math.abs(e.changedTouches[0].clientX - touchStartX);
-    var dy = Math.abs(e.changedTouches[0].clientY - touchStartY);
-    if (dx > 10 || dy > 10) return;
-    if (e.target.closest(".footnote") || e.target.closest("sup[fn-index]")) return;
-    document.querySelectorAll(".footnote.visible").forEach(closePanel);
-  }, { passive: true });
+  document.addEventListener(
+    "touchend",
+    function (e) {
+      if (!document.querySelector(".footnote.visible")) return;
+      var dx = Math.abs(e.changedTouches[0].clientX - touchStartX);
+      var dy = Math.abs(e.changedTouches[0].clientY - touchStartY);
+      if (dx > 10 || dy > 10) return;
+      if (e.target.closest(".footnote") || e.target.closest("sup[fn-index]"))
+        return;
+      document.querySelectorAll(".footnote.visible").forEach(closePanel);
+    },
+    { passive: true },
+  );
 });
