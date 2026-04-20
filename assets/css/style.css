@@ -169,13 +169,15 @@ ________________________ */
   overflow-y: scroll;
 }
 
-.page-wrapper > :first-child {
+.page-wrapper > :first-child,
+.page-content > :first-child {
   padding-top: 0;
 }
 
 header,
 section {
   position: relative;
+  padding-top: var(--margin-s);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
