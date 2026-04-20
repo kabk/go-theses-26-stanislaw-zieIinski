@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const pageWrapper = document.querySelector(".page-wrapper");
 
+  // Build a footnote panel for every <sup fn-index="N"> in the document.
+  // The panel's content comes from the matching <template id="fnN">.
+  // If the template has data-see="M", a cross-reference line is appended.
+  // Each panel is inserted into its own <section> or <header> so that
+  // position:absolute placement is relative to that container.
   document.querySelectorAll("sup[fn-index]").forEach(function (sup) {
     const id = sup.getAttribute("fn-index");
 
@@ -41,10 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
     (section || document.body).appendChild(panel);
   });
 
+  // Returns true when the viewport is at or below the mobile breakpoint.
   function isMobile() {
     return window.matchMedia("(max-width: 800px)").matches;
   }
 
+  // Hides a panel and updates the aria state of its reference <sup>.
+  // Removes footnote-open from the page wrapper once no panels remain visible.
   function closePanel(panel) {
     panel.classList.remove("visible");
     panel.setAttribute("aria-hidden", "true");
@@ -56,6 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // Shows a panel. Closes any other open panel first.
+  // On desktop: positions the panel next to its <sup> reference by calculating
+  // the offset between the sup and the top of the containing section.
+  // On mobile: slides the panel up from the bottom as a fixed overlay.
   function openPanel(panel, id) {
     document.querySelectorAll(".footnote.visible").forEach(closePanel);
     panel.classList.add("visible");
@@ -76,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     panel.focus();
   }
 
+  // Toggles a panel open or closed by footnote index.
   function toggle(id) {
     const panel = document.getElementById("fn" + id + "-panel");
     if (!panel) return;
@@ -86,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Click handler
+  // Click: open/close on <sup>, close on the × button, close on outside click.
   document.addEventListener("click", function (e) {
     const closeBtn = e.target.closest(".footnote-close");
     if (closeBtn) {
@@ -106,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Keyboard handler
+  // Keyboard: Enter or Space on a focused <sup> toggles its panel.
   document.addEventListener("keydown", function (e) {
     if (e.key !== "Enter" && e.key !== " ") return;
     const sup = e.target.closest("sup[fn-index]");
@@ -115,13 +128,14 @@ document.addEventListener("DOMContentLoaded", function () {
     toggle(sup.getAttribute("fn-index"));
   });
 
-  // Close all panels when crossing the mobile/desktop breakpoint
+  // Close all open panels when the viewport crosses the mobile/desktop breakpoint.
   const mq = window.matchMedia("(max-width: 800px)");
   mq.addEventListener("change", function () {
     document.querySelectorAll(".footnote.visible").forEach(closePanel);
   });
 
-  // Mobile: tap outside closes
+  // Mobile: a tap outside the panel or its <sup> closes the panel.
+  // Touch start/end are compared to filter out swipes (dx or dy > 10px).
   var touchStartX, touchStartY;
   document.addEventListener(
     "touchstart",
