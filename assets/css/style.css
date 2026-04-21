@@ -138,6 +138,7 @@ img {
   width: 200px;
   height: auto;
   filter: grayscale(1);
+  image-rendering: pixelated;
   display: block;
 }
 
@@ -346,7 +347,6 @@ sup.footnote-ref::after {
 
 .footnotes-section ol {
   list-style: decimal;
-  padding-inline-start: 1.5em;
 }
 
 /* WEBSITE MEDIA QUERIES */
