@@ -37,7 +37,7 @@ ________________________ */
   /* Margin values */
   --margin: 1rem;
 
-  --margin-xs: calc(var(--margin) * 0.5);
+  --margin-xs: calc(var(--margin) * 0.2);
   --margin-s: calc(var(--margin) * 1);
   --margin-m: calc(var(--margin) * 2);
   --margin-l: calc(var(--margin) * 3);
@@ -120,6 +120,10 @@ hr {
   color: #f19;
 }
 
+.credits-item:has(#note-on-colour) > .credits-subtitle {
+  color: #f19;
+}
+
 #note-on-colour a {
   color: #f19;
 }
@@ -135,6 +139,36 @@ img {
   height: auto;
   filter: grayscale(1);
   display: block;
+}
+
+.f19-wrap {
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+}
+
+.f19-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: black;
+  z-index: 0;
+}
+
+.f19-wrap img {
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference;
+}
+
+.f19-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ff1199;
+  mix-blend-mode: screen;
+  z-index: 2;
+  pointer-events: none;
 }
 
 figcaption {

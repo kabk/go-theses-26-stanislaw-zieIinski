@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   idleTimer = setTimeout(startTicking, IDLE_DELAY);
 
-const header = document.querySelector("header");
+  const header = document.querySelector("header");
   if (header) {
     header.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -142,12 +142,12 @@ const header = document.querySelector("header");
   }
 
   document.querySelectorAll("figure img").forEach(function (img) {
-    var wrap = document.createElement("div");
-    wrap.className = "img-wrap";
+    let wrap = document.createElement("div");
+    wrap.className = "f19-wrap";
     img.parentNode.insertBefore(wrap, img);
     wrap.appendChild(img);
-    var overlay = document.createElement("div");
-    overlay.className = "img-overlay";
+    let overlay = document.createElement("div");
+    overlay.className = "f19-overlay";
     wrap.appendChild(overlay);
   });
 });
