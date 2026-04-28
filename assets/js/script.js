@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  document.querySelectorAll("figure img").forEach(function (img) {
+document.querySelectorAll("figure img").forEach(function (img) {
     let wrap = document.createElement("div");
     wrap.className = "f19-wrap";
     img.parentNode.insertBefore(wrap, img);
